@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CandidatosListComponent } from './candidatos-list/candidatos-list.component';
 import { CandidatosDetailComponent } from './candidatos-detail/candidatos-detail.component';
+import { CandidatosRoutingModule } from './candidatos-routing.module';
+import  {RouterModule} from '@angular/router';
 
 
 
@@ -11,7 +13,9 @@ import { CandidatosDetailComponent } from './candidatos-detail/candidatos-detail
     CandidatosDetailComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CandidatosRoutingModule,
+    RouterModule
   ],
   exports: [
     CandidatosListComponent
